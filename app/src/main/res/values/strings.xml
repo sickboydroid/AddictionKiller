@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Addiction Killer</string>
+    <string name="welcome_msg">Welcome to addiction killer app</string>
+    <string name="kill_addiction">Kill Addiction</string>
+</resources>
