@@ -44,7 +44,7 @@ public class ObbManager {
     public void copyObbToInternalStorage() {
         if (getObbFile().exists())
             return;
-        StatusManager.addMessage("Copying OBB...");
+        StatusManager.addMessage("Copying OBB...", true);
         new Thread(() -> {
             try {
                 Files.copy(getLockedObbFile().toPath(), getObbFile().toPath());

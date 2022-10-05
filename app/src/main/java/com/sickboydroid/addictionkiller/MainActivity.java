@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         long time = currentTime.getTime();
         short hour = Short.parseShort(new SimpleDateFormat("HH", Locale.ENGLISH).format(time));
         short minute = Short.parseShort(new SimpleDateFormat("mm", Locale.ENGLISH).format(time));
-        Toast.makeText(this, "min: " + minute, Toast.LENGTH_SHORT).show();
         return hour >= 15 && (hour < 18 || (hour == 18 && minute < 30));
     }
 }
